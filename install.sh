@@ -5,9 +5,10 @@ BLUE='\033[0;34m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
+WHITE='\033[0;37m'
 NC='\033[0m'
 
-# Display welcome message
+# Display message
 display_welcome() {
   echo -e ""
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
@@ -17,8 +18,8 @@ display_welcome() {
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${RED}[+] ===============================================  [+]${NC}"
   echo -e ""
-  echo -e "script ini di buat untuk mempermudah penginstalasian thema pterodactyl,"
-  echo -e "dilarang keras untuk dikasih gratis."
+  echo -e "${WHITE}[+] script ini di buat untuk mempermudah penginstalasian thema pterodactyl [+]${NC}"
+  echo -e "${RED}[+] DO NOT SHARE FOR FREE! [+]${NC}"
   echo -e ""
   echo -e "𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 :"
   echo -e "@PaiiTheStory"
@@ -92,7 +93,7 @@ install_theme() {
     read -r SELECT_THEME
     case "$SELECT_THEME" in
       1)
-        THEME_URL=$(echo -e "https://github.com/gitfdil1248/thema/raw/main/C2.zip")
+        THEME_URL=$(echo -e "https://github.com/Itsweetboba/Instalasi/raw/main/C2.zip")
         break
         ;;
       2)
@@ -100,7 +101,7 @@ install_theme() {
         break
         ;;
       3)
-        THEME_URL=$(echo -e "https://github.com/gitfdil1248/thema/raw/main/C3.zip")
+        THEME_URL=$(echo -e "https://github.com/Itsweetboba/Instalasi/raw/main/C3.zip")
         break
         ;; 
       x)
@@ -226,7 +227,7 @@ uninstall_theme() {
   echo -e "${BLUE}[+]                    DELETE THEME                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-  bash <(curl https://raw.githubusercontent.com/gitfdil1248/thema/main/repair.sh)
+  bash <(curl https://raw.githubusercontent.com/Itsweetboba/Instalasi/main/repair.sh)
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "${GREEN}[+]                 DELETE THEME SUKSES             [+]${NC}"
@@ -245,7 +246,7 @@ echo -e "${BLUE}[+] =============================================== [+]${NC}"
 echo -e "                                                                   "
 
 # Unduh file tema
-wget -O /root/C2.zip https://github.com/gitfdil1248/thema/raw/main/C2.zip
+wget -O /root/C2.zip https://github.com/Itsweetboba/Instalasi/raw/main/C2.zip
 
 # Ekstrak file tema
 unzip /root/C2.zip -d /root/pterodactyl
@@ -512,3 +513,4 @@ while true; do
       ;;
   esac
 done
+
