@@ -6,5 +6,6 @@ Do Not Sell This!, Buy License / Password just dm me
 
 Comand Run Install Thema
 
-bash <(curl wait a second..)
+bash <(curl (https://raw.githubusercontent.com/Itsweetboba/Instalasi/main/install.sh)
+
 
